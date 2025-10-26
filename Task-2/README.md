@@ -17,10 +17,10 @@ DBSCAN is useful if we expect irregular clusters or want to identify outlier Pok
 
 
 ## MODEL - 2
-Best Random Forest F1-score: 0.647, AUC: 0.997
-Optimal Parameters → Depth: 10.0, Trees: 10.0
-Most Important Feature → oldbalanceOrg
+Best Random Forest F1-score: 0.647, AUC: 0.997  
+Optimal Parameters → Depth: 10.0, Trees: 10.0  
+Most Important Feature → oldbalanceOrg  
 
-High Recall is critical for fraud detection (better to catch more frauds, even if precision drops slightly).
+High Recall is critical for fraud detection (better to catch more frauds, even if precision drops slightly).  
 
 The model is overfit because of the limitations of my laptop, here we have only taken 100,000 rows out of nearly 6 million, and so the model isn't giving result as expected.
