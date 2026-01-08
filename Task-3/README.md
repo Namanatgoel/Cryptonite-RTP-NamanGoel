@@ -1,15 +1,15 @@
-MLP from Scratch
-Methods
+MLP from Scratch  
+Methods  
 ReLU and vanilla gradient descent were deliberately chosen to minimize hidden assumptions and maximize transparency in a from-scratch neural network implementation. Advanced activations and adaptive optimizers, while powerful, introduce additional theoretical constraints and algorithmic complexity that are better handled by deep learning frameworks rather than manual implementations.
 A deep multi-layer perceptron (MLP) was implemented entirely from scratch using NumPy to predict wine quality scores. Both red and white wine datasets from the UCI repository were combined into a single training set. A binary domain indicator was appended to each sample to explicitly encode wine type. The network employed ReLU activations in hidden layers, a linear output layer for regression, He weight initialization, and batch gradient descent optimization. Input features were standardized using statistics computed from the training set. The model was trained for 500 epochs with a learning rate of 0.015.
-
-Results
+  
+Results  
 The model achieved an overall test mean squared error (MSE) of 0.65 corresponds to an RMSE (MSE_root) of approximately 0.81, indicating that the model’s predictions deviate from the true wine quality scores by less than one quality point on average. Given the discrete and limited scale of the target variable, this represents reasonable predictive accuracy and demonstrates that the model captures meaningful relationships between physicochemical properties and perceived quality.
 The model achieves nearly identical performance on red wine (0.65) and white wine (0.65) subsets. The training loss decreased smoothly and monotonically, indicating stable optimization and good convergence. The close alignment of red and white wine test errors demonstrates that joint training with a domain indicator effectively mitigates domain bias and enables robust generalization across wine types.
-
-MLP using PyTorch
-Methods
+  
+MLP using PyTorch  
+Methods  
 The Adult Income dataset was used to formulate a binary classification task predicting whether an individual earns more than $50K annually. The dataset contains both numerical and categorical features, which were preprocessed by standardizing numerical variables and applying one-hot encoding to categorical variables. A multi-layer perceptron (MLP) was implemented using PyTorch, with two hidden layers and ReLU activations. The model was trained using the Adam optimizer and binary cross-entropy loss with logits. Training was performed using mini-batch gradient descent, and model performance was evaluated using accuracy, precision, recall, F1-score, and a confusion matrix to account for class imbalance.
-
-Results
+  
+Results  
 With 20 epochs and a batch size of 256, the model achieved an accuracy of 85.1%, a precision of 73.3%, a recall of 63.4%, and an F1-score of 0.68 for the high-income class. Increasing the training duration to 100 epochs and the batch size to 512 resulted in a higher recall (66.0%) but reduced precision (64.8%) and overall accuracy (82.6%), leading to a lower F1-score (0.65). These results illustrate the trade-off between precision and recall in the presence of class imbalance and establish the shorter training configuration as a stronger balanced baseline.
