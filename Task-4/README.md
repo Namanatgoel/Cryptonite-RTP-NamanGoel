@@ -236,12 +236,6 @@ FER2013 Key Findings
 
     Confusions persist between similar emotions (Fear–Surprise, Angry–Disgust)
 
-Cross-Dataset Comparative Insights
-Dataset	        Best Strategy	    Accuracy	Macro F1
-Fashion-MNIST	Custom CNN	        ~0.91	    ~0.91
-DeepWeeds	    Full FT	            ~0.94	    ~0.92
-FER2013	        Full FT	            ~0.64	    ~0.62
-
 Global Observations
     Transfer learning effectiveness depends on domain similarity
     
