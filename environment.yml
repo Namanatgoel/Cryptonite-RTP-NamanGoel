@@ -220,9 +220,9 @@ dependencies:
       - six==1.17.0
       - smart-open==7.5.0
       - soupsieve==2.8.1
-      - spacy==3.8.11
-      - spacy-legacy==3.0.12
-      - spacy-loggers==1.0.5
+ #     - spacy==3.8.11
+ #     - spacy-legacy==3.0.12
+ #     - spacy-loggers==1.0.5
       - srsly==2.5.2
       - stack-data==0.6.3
       - sympy==1.14.0
